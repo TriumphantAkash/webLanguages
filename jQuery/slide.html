@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script> 
+		<script> $(document).ready(function(){ 
+												$("#down").click(function(){ 
+																				$("#down").hide("fast"); 
+																				$("#up").show("fast"); 
+																				$("#panel").slideDown("slow"); 
+																			}); 
+												$("#up").click(function(){ 
+																				$("#down").show("fast"); 
+																				$("#up").hide("fast"); 
+																				$("#panel").slideUp("slow"); 
+																			}); 
+											});
+		</script> 
+	</head>
+	<body> 
+		<div id="down">Click to slide down panel</div> 
+		<div id="up">Click to slide up panel</div> 
+		<div id="panel">Hello world!</div> 
+	</body> 
+</html>

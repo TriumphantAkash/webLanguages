@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+ <html> 
+ 	<head> 
+ 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script> 
+ 		<script> 
+ 			$(document).ready(function(){ 
+ 											$("#animate").click(function(){ 
+ 																			vardiv=$("div"); 
+ 																			vardiv.animate({height:'300px',opacity:'0.4'},"slow"); 
+ 																			vardiv.animate({width:'300px',opacity:'0.8'},"slow"); 
+ 																			vardiv.animate({height:'100px',opacity:'0.4'},"slow"); 
+ 																			vardiv.animate({width:'100px',opacity:'0.8'},"slow"); 
+ 																			vardiv.animate({left:'100px',height:'300px',width:'300px'},"slow"); 
+ 																			vardiv.animate({fontSize:'3em'},"slow"); }); 
+
+ 																			$("#stop").click(function(){ 
+ 																										$("div").stop(true);}); 
+ 										}); 
+ 		</script> 
+ 	</head> 
+ 	<body> 
+ 		<button id="animate">Start Animation</button>
+ 		<button id="stop">Stop Animation</button><br/><br/><br/><br/> 
+ 		<div style="background:#98bf21;height:100px;width:100px;position:absolute;">Testing </div> 
+ 	</body> 
+ </html>
